@@ -12,6 +12,5 @@ public class HelloWorld
 		int number2;
 		int sum;
 		System.out.println("Hello world!");
-		
 	}
 }

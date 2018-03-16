@@ -12,6 +12,15 @@ public class sum
 		int number2;
 		int sum;
 		
-		System.out.println("Enter fisrt integer: ");
+		System.out.print("Enter fisrt integer: ");
+		number1 = input.nextInt();
+		
+		System.out.print("Enter second integer: ");
+		number2 = input.nextInt();
+		
+		sum = number1 + number2;
+		
+		System.out.printf("Sum is: %d", sum);
+		input.close();	
 	}
 }

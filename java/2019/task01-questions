@@ -1,0 +1,23 @@
+Exercícios Laboratório Programação
+Usando as classes que permitem a entrada de dados pelo usuário (Scanner ou JoptionPane), as classes String e Math, e vetores, implemente os exercícios:
+1 - Criar um programa que leia dois nome e mostre a quantidade de letras de cada um, os nomes em maiúsculo, e se são iguais ou diferentes. 
+2 - Criar um programa que leia um valor decimal e mostre esse valor arredondado usando os três métodos de arredondamento da classe Math.
+3 - Criar um programa que leia dois números e mostre o maior e o menor.
+4 - Criar um programa que retorne um número aleatório de 0 a 100.
+5 - Criar um programa que receba 10 valores inteiros e armazene-os em um vetor. Posteriormente o programa deve varrer o vetor e mostrar a soma, a média, o vetor em ordem inversa e gerar um novo vetor com o quadrado dos valores.
+6 - Armazenar em um vetor uma quantidade de números informada pelo usuário inicialmente. Mostrar o vetor em ordem crescente e em ordem decrescente. Solicitar um novo valor do usuário e informar se existe ou não no vetor e em que posição.
+7 - Criar um programa que entre com o nome e o número de telefone e valide os dados. Os nomes só podem ter caracteres alfabéticos e o telefone só numéricos. Use Character.isDigit().
+8 - Criar um programa que o usuário informe uma quantidade X de funcionários e a seguir informe os X nomes e X salários. O programa deve armazenar os dados em 2 vetores. Posteriormente, o programa deve varrer o vetor de salários e mostrar:
+O maior salário (posição, nome e salário)
+O menor salário (posição, nome e salário)
+A média salarial
+Os maiores que a média (nomes e salários)
+Os menores que a média (nomes e salários)
+
+9 - Criar um programa que leia um cpf e valide. Pesquise a fórmula para validação de CPF na internet.
+	Cálculo do primeiro dígito:
+	Separar os 9 dígitos e multiplicar cada um pelos números de 2 a 10 da direita para a esquerda (ex: 111444777 → 1*10+1*9+1*8+4*7+4*6+4*5+7*4+7*3+7*2). A soma é dividida por 11. Se o  resto da divisão for < 2, o dígito é 0, senão, o dígito será 11 – o resto da divisão.
+Ex: 111444777 → soma = 162/11 = 14 resto 8, logo o dígito será 11-8 = 3 → 111444777.3X
+	Cálculo do segundo dígito:
+	Acrescenta o primeiro dígito calculado e executa a mesma regra multiplicando de 2 a 11 da direita para a esquerda (ex: 1114447773 → 1*11+1*10+1*9+4*8+4*7+4*6+7*5+7*4+7*3+3*2). A soma é dividida por 11. Se o  resto da divisão for < 2, o dígito é 0, senão, o dígito será 11 – o resto da divisão.
+Ex: 111444777.3 → soma = 204/11 = 18 resto 6, logo o dígito será 11-6 = 5 → 111444777.35

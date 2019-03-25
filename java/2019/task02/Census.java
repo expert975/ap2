@@ -47,7 +47,6 @@ public class Census
 				biggestAge = age.get(i);
 			}
 		System.out.printf("Biggest age is %s: %d\n",
-						  iBiggestAge,
 						  name.get(iBiggestAge),
 						  age.get(iBiggestAge));
 
@@ -55,16 +54,16 @@ public class Census
 		{
 			if(age.get(i) >= 18
 			   && age.get(i) <= 35
-			   && sex.get(i) == "f"
-			   && eyeColor.get(i) == "green"
-			   && hairColor.get(i) == "blond")
+			   && sex.get(i).equals("f")
+			   && eyeColor.get(i).equals("green")
+			   && hairColor.get(i).equals("blond"))
 				selectedProfileCount++;
 		}
 
-		if(selectedProfileCount != 0)
+		if(selectedProfileCount == 0)
 			System.out.printf("No individual matches the criteria\n");
 		else
-			System.out.printf("Selected profile percent: %f\n",
-							  populationCount/selectedProfileCount);
+			System.out.printf("Selected profile percent: %.2f%%\n",
+						100/((float)populationCount/selectedProfileCount));
 	}
 }

@@ -1,10 +1,10 @@
 /**
-   03
+   02
 */
 
 import java.util.Scanner;
 
-public class WorkerPays
+public class CarCost
 {
 	public static void main(String Args[])
 	{

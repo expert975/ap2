@@ -1,0 +1,45 @@
+1. Crie uma classe com o nome Contato que
+possui dois atributos: nome e email do tipo
+String. Crie outra classe, chamada Agenda,
+que possui um atributo contatos do tipo
+List<Contato>. A classe Agenda deve conter um
+método para adicionar um novo contato, outro
+método para buscar um contato (retorna uma
+instância de Contato) através do nome e, por
+fim, um método para excluir um contato
+através do nome.
+
+2. Identifique as classes e implemente um
+programa para a seguinte especificação: “O
+supermercado vende diferentes tipos de
+produtos. Cada produto tem um preço e uma
+quantidade em estoque. Um pedido de um
+cliente é composto de itens, onde cada item
+especifica o produto que o cliente deseja e a
+respectiva quantidade. Esse pedido pode ser
+pago em dinheiro, cheque ou cartão.”
+
+3. Faça um programa para controle de
+empréstimo de livros, com as classes
+Emprestimo, Livro e Pessoa.
+
+4. Implemente um programa para representar a
+árvore genealógica de uma família.  Para tal,
+crie uma classe Pessoa que permita indicar,
+além de nome e idade, o pai e a mãe. Tenha em
+mente que pai e mãe também são do tipo
+Pessoa.
+
+5. Faça um programa que contenha uma classe
+que representa um funcionário, registrando
+seu nome, salário e data de admissão. Crie
+por último uma classe que representa uma
+empresa, registrando seu nome e CNPJ. Em
+todas as classes defina os atributos como
+privados e crie métodos públicos para acessar
+(get) e modificar (set) os atributos.  ◦
+Finalmente, faça um programa que: ▪ Crie uma
+empresa; ▪ Adicione a empresa alguns
+funcionários (solicitar no início quantos); ▪
+Dê aumento de 10% a todos os funcionários de
+um determinado departamento.

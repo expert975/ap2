@@ -1,0 +1,183 @@
+1. Exercício 01:
+
+   1.1. Crie uma classe para modelar os funcionários de um
+   banco. Esta classe deverá chamar FuncionarioBanco.
+
+   1.2. Defina nessa classe um atributo para armazenar o
+   nome funcionário e o valor do vale-refeição diário pago
+   aos funcionários. Dê ao atributo que armazenará o valor
+   do vale-refeição, o nome valorValeRefeicao.
+
+		1.2.1. Defina os métodos getNome(), setNome(),
+		getValorValeRefeicao() e setValorValeRefeicao() para
+		estes atributos.
+
+	1.3. Faça um teste para verificar o funcionamento da
+	classe até este momento.
+
+		 1.3.1. Fazer um teste significa criar a classe
+		 chamada FuncionarioTeste.
+
+		 1.3.2. Esta classe que deverá conter um método
+		 main().
+
+		 1.3.3. Dentro deste método main() você deve criar
+		 uma instância de funcionario e atribuir um valor
+		 qualquer aos seus atributos;
+
+		 1.3.4. Esta atribuição deverá ser utilizando os
+		 métodos setNome() e setValorValeRefeicao().
+
+		 1.3.5. Imprima na tela o nome do funcionário e o
+		 valor do seu vale-refeição, utilizando os métodos
+		 getNome() e getValorValeRefeicao();
+
+	1.4. Defina um método para reajustar o do vale-refeição
+	diário a partir de uma taxa.
+
+	1.5. Faça um teste para verificar o funcionamento do
+	reajuste do vale-refeição.
+
+	DICA: consulta o material disponibilizado no SIGAA para
+	maior entendimento da sintaxe java.
+
+	2. Exercício 02 (seguindo as instruções contidas no
+	exercício 01):
+
+	   2.1. Implemente uma classe para modelar de forma
+	   genérica as contas de um banco. Esta classe deverá se
+	   chamar ContaBancaria.
+
+	   2.2. Defina atributos para esta classe conforme você
+	   julgar necessários e suficientes para identificar uma
+	   conta bancária.
+
+	   2.3. Adicione métodos de acesso com nomes
+	   padronizados para os atributos da classe
+	   ContaBancária.
+
+	   2.4. Crie objetos desta classe e utilize os métodos
+	   de acesso para alterar os valores dos atributos.
+
+	   2.5. Para executar o item 2.4 será necessário criar a
+	   classe ContaBancariaTeste que implementa o método
+	   main().
+
+	   2.6. Imprima na tela os valores dos atributos de cada
+	   objeto instanciado.
+
+	3. Exercício 03
+
+	   3.1. Defina uma classe para representar os
+	   funcionários de um órgão público qualquer. Esta
+	   classe deverá se chamar FuncionarioPublico e contar
+	   com um atributo para guardar o salários e outro para
+	   o nome.
+
+	   3.2. Teste a classe FuncionarioPublico criando um
+	   objeto e manipulando diretamente os seus
+	   atributos. Para testar será necessário implementar a
+	   classe FuncionarioPublicoTeste que implementa o
+	   método main().
+
+	   3.3. Perceba que a classe de FuncionarioPublicoTeste
+	   pode acessar ou modificar os valores dos atributos de
+	   um objeto da classe FuncionarioPublico.
+
+	   3.4. Imprima o valor dos atributos do objeto criado.
+
+	   3.5. Aplique a ideia do encapsulamento tornando os
+	   atributos definidos na classe FuncionarioPublico
+	   privados.
+
+	   3.6. Volte à classe FuncionarioPublicoTeste. Observe
+	   os erros de compilação. (Adicione um comentário no
+	   código desta classe explicando o porquê destes
+	   erros). Lembre-se que um atributo privado só pode ser
+	   acessado por código escrito na própria classe do
+	   atributo.
+
+	   3.7. Crie métodos de acesso com nomes padronizados
+	   para os atributos definidos na classe
+	   FuncionarioPublico.
+
+	   3.8. Altere a classe de FuncionarioPublicoTeste para
+	   que ela utilize os métodos de acesso em vez de
+	   manipular os atributos do objeto da classe
+	   FuncionarioPublico diretamente.
+
+	4. Exercício 04:
+
+	   4.1. Implemente uma Classe com o nome de Pessoa, que
+	   possua os seguintes atributos: nome, idade e o método
+	   fazAniversario() que não retorna nenhum valor;
+
+	   4.2. Crie uma pessoa, coloque seu nome e idade
+	   iniciais, faça alguns aniversários (aumentando a
+	   idade) e imprima seu nome e sua idade a cada vez que
+	   alterar sua idade.
+
+	   4.3. Para implementar o item 4.2 será necessário
+	   implementar a classe PessoaTeste, com o método
+	   main();
+
+	5. Exercício 05:
+
+	   5.1. Implemente uma classe chamada Porta, que possua
+	   os atributos: aberta, cor, dimensaoX, dimensaoY,
+	   dimensaoZ e os métodos: void abre(), void fecha(),
+	   void pinta(String s), boolean estaAberta().
+
+	   5.2. Crie uma porta, abra e feche a mesma, pinte-a de
+	   diversas cores, altere suas dimensões e use o método
+	   estaAberta para verificar se ela está aberta.
+
+	   5.3. Imprima os dados da porta a cada alteração
+	   efetuada.
+
+	   5.4. Para atender aos itens 5.2 e 5.3 é necessário
+	   implementar a classe PortaTeste, que deverá conter o
+	   método main().
+
+	6. Exercício 06:
+
+	   6.1. Implemente uma classe chamada Casa, que possua
+	   os atributos: cor, porta1, porta2, porta3 e os
+	   métodos: void pinta(String s), int
+	   quantasPortasEstaoAbertas().
+
+	   6.2. Crie uma casa e pinte-a. Crie três portas e
+	   coloque-as na casa; abra e feche as mesmas como
+	   desejar.
+
+	   6.3. Para atender ao item 6.2, implemente a classe
+	   CasaTeste, com seu respectivo método main().
+
+	   6.4. Utilize o método quantasPortasEstaoAbertas()
+	   para imprimir o número de portas abertas.
+
+	7. Definir pacotes para manter o código de cada
+	exercício utilizando o seguinte padrão para nominar os
+	pacotes em que serão gravados os arquivos de
+	código-fonte:
+
+	7.1. br.com.ap220191.ta<01,02>.<primeiroNome_segundoNome_matricula.lista04.ex
+	ercicio<x>. Obs tudo em letra minúscula. Nome composto
+	utilizar da seguinte forma:
+	primeiroNomeDoNomeComposto_segundoNomeDoNomeComposto.
+	Exemplo: joao_pedro, marcos_valerio, etc.
+
+II – Produto a ser entregue Arquivos de código-fonte
+(*.java) implementados para a resolução dos exercícios de 1
+a 6.  Se na entrega conter outros arquivos além dos (.java),
+não será considerada para efeitos de avaliação.
+
+III – Quantidade de componentes - Esta atividade é para ser
+desenvolvida de forma individual.
+
+IV – Acompanhamento - Entrar em contato com o professor
+através dos vários canais de comunicação disponíveis para o
+esclarecimento de dúvidas.
+
+IV – Entrega - A atividade deverá ser entregue através do
+sistema SIGAA até o dia 08/04/2019.

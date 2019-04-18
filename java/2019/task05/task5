@@ -1,0 +1,162 @@
+1. Exercício 01:
+
+   1.1.  Crie uma classe chamada Ingresso que possua um atributo
+   chamado valor e seus respectivos métodos get e set.
+
+   1.2.  Crie uma classe chamada IngressoVIP, que herda de Ingresso
+   e possua um atributo chamado valorAdicional e seus respectivos
+   métodos get e set.
+
+   1.3.  Crie nesta última classe um método chamado getValor() para
+   retornar o valor do ingresso, este método deverá retornar o
+   valor total do ingresso, ou seja, o valor somado ao valor
+   adicional.
+
+   1.4.  Implemente uma classe chamada IngressoTeste, que possua o
+   método main(), para o teste das duas classes anteriores.  Dica:
+   O que está se pedindo no item 1.3 chama-se sobrescrita de
+   método. Para implementar utilize a notação @override antes da
+   definição do método e para obter o valor do ingresso da
+   superclasse, utilize super.getValor().
+
+2. Exercício 02:
+
+   2.1.  Crie classes de forma a representar o diagrama a abaixo:
+   2.png
+
+   2.2.  A classe Empregado deve possuir dois atributos, nome e
+   salario. Salario deve ter o modificador de visibilidade do tipo
+   protected. Crie os métodos get e set para classes e o método
+   toString.
+
+   2.3.  A classe Gerente deve herdar da classe Empregado. Crie os
+   métodos get e set para a classe e o método toString. O método
+   toString da classe Gerente deve incluir a informação do
+   departamento, além dos dados da superclasse. O construtor da
+   classe deve receber por parâmetro, além as informações da
+   superclasse, a informação do departamento.
+
+   2.4.  A classe Vendedor deve herdar também da classe
+   Empregado. Deve possuir ainda um método denominado
+   calcularSalario. Esse método deve retornar um valor do tipo
+   float, correspondente ao valor do salário acrescido do
+   respectivo percentual de comissão. O construtor da classe deve
+   receber por parâmetro, além as informações da superclasse, a
+   informação do percentual de comissão do vendedor. O método
+   toString da classe deve apresentar as informações de nome do
+   empregado, salário sem comissão, salario com comissão e
+   percentual de comissão.
+
+   2.5.  Implemente uma classe para testar objetos das classes
+   implementadas.
+
+3. Exercício 03
+
+   3.1.Crie classes de forma a representar o diagrama a seguir:
+   3.png
+
+   3.2.  A classe ContaEspecial herda da classe ContaCorrente.
+
+   3.3.  Clientes que possuem conta especial possuem um limite de
+   crédito. Dessa forma, podem fazer saques até esse valor limite,
+   mesmo que não possuam saldo suficiente na conta.
+
+   3.4.  O construtor da classe ContaEspecial deve receber como
+   parâmetro, além dos parâmetros da superclasse, o limite que o
+   banco disponibiliza para o cliente.
+
+   3.5.  Sobrescreva o método sacar na classe ContaEspecial, de
+   modo que o cliente possa ficar com saldo negativo até o valor de
+   seu limite. Note que o atributo saldo da classe ContaCorrente
+   deve ter o modificador de visibilidade protected para que possa
+   ser modificado na subclasse.
+
+   3.6.  Implemente uma classe para testar objetos das classes
+   implementadas.
+
+4. Exercício 04:
+
+   4.1.  Cria uma Classe Pessoa, contendo os atributos
+   encapsulados, com seus respectivos seletores (getters) e
+   modificadores (setters), e ainda o construtor padrão e pelo
+   menos mais duas opções de construtores conforme sua
+   percepção. Atributos: String nome; String endereço; String
+   telefone;
+
+5. Exercício 05:
+
+   5.1.  Considere, como subclasse da classe Pessoa (do exercício
+   04. Sim, uma classe pode estender outra de outro pacote.) a
+   classe Fornecedor. Considere que cada instância da classe
+   Fornecedor tem, para além dos atributos que caracterizam a
+   classe Pessoa, os atributos valorCredito (correspondente ao
+   crédito máximo atribuído ao fornecedor) e valorDivida (montante
+   da dívida para com o fornecedor).
+
+   5.2.  Implemente na classe Fornecedor, para além dos usuais
+   métodos seletores e modificadores, um método obterSaldo() que
+   devolve a diferença entre os valores dos atributos valorCredito
+   e valorDivida.
+
+   5.3.  Depois de implementada a classe Fornecedor, crie uma
+   classe de teste adequada que lhe permita verificar o
+   funcionamento dos métodos implementados na classe Fornecedor e
+   os herdados da classe Pessoa.
+
+6. Exercício 06:
+
+   6.1.  Considere, como subclasse da classe Pessoa, a classe
+   Empregado (Não é o mesmo empregado do exercício 02). Considere
+   que cada instância da classe Empregado tem, para além dos
+   atributos que caracterizam a classe Pessoa, os atributos
+   codigoSetor (inteiro), salarioBase (vencimento base) e imposto
+   (porcentagem retida dos impostos).
+
+   6.2.  Implemente a classe Empregado com métodos seletores e
+   modificadores e um método calcularSalario.
+
+   6.3.  Implemente uma classe de teste adequada para a classe
+   Empregado.
+
+7. Exercício 07:
+
+   7.1.  Implemente a classe Administrador como subclasse da classe
+   Empregado (Exercício 06). Um determinado administrador tem como
+   atributos, para além dos atributos da classe Pessoa e da classe
+   Empregado, o atributo ajudaDeCusto (ajudas referentes a viagens,
+   estadias, ...). Note que deverá redefinir na classe
+   Administrador o método herdado calcularSalario (o salário de um
+   administrador é equivalente ao salário de um empregado usual
+   acrescido da ajuda de custo).
+
+   7.2.  Implemente uma classe de teste adequada para esta classe.
+
+8. Exercício 08:
+
+   8.1.  Implemente a classe Operario como subclasse da classe
+   Empregado (Exercício 06). Um determinado operário tem como
+   atributos, para além dos atributos da classe Pessoa e da classe
+   Empregado, o atributo valorProducao (que corresponde ao valor
+   monetário dos artigos efetivamente produzidos pelo operário) e
+   comissao (que corresponde à porcentagem do valorProducao que
+   será adicionado ao vencimento base do operário). Note que deverá
+   redefinir nesta subclasse o método herdado calcularSalario (o
+   salário de um operário é equivalente ao salário de um empregado
+   usual acrescido da referida comissão).
+
+   8.2.  Implemente uma classe de teste adequada para esta classe.
+
+9. Exercício 09:
+
+   9.1.  Implemente a classe Vendedor como subclasse da classe
+   Empregado (Exercício 06). Um determinado vendedor tem como
+   atributos, para além dos atributos da classe Pessoa e da classe
+   Empregado, o atributo valorVendas (correspondente ao valor
+   monetário dos artigos vendidos) e o atributo comissao
+   (porcentagem do valorVendas que será adicionado ao vencimento
+   base do Vendedor). Note que deverá redefinir nesta subclasse o
+   método herdado calcularSalario (o salário de um vendedor é
+   equivalente ao salário de um empregado usual acrescido da
+   referida comissão).
+
+   9.2.  Implemente uma classe de teste adequada para esta classe.

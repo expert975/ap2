@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><diagram program="umlet" version="13.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>410</x>
+      <y>80</y>
+      <w>280</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>*Pessoa*
+--
+-nome: String
+-endereco: String
+-telefone: String
+--
++getTelefone(): String
++setTelefone(telefone: String)
++getEndereco(): String
++setEndereco(endereco: String)
++getNome(): String
++setNome(nome: String)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>380</x>
+      <y>340</y>
+      <w>340</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>*Empregado*
+--
++codigoSetor: int
++salarioBase: float
++imposto: float
+--
++calcularSalario(): float
++getImposto(): String
++setImposto(imposto: String)
++getSalariobase(): String
++setSalariobase(salarioBase: String)
++getCodigosetor(): String
++setCodigosetor(codigoSetor: String)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>260</y>
+      <w>30</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>440</x>
+      <y>600</y>
+      <w>210</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>*Vendedor*
+--
++valorVendas: float
++comissao: float</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>530</y>
+      <w>30</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+</diagram>
